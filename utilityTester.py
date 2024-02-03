@@ -1,5 +1,4 @@
 
-from utils import file
 from utils import updater
 from utils.menu import Menu
 from utils.logger import Logger

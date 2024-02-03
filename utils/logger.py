@@ -1,3 +1,14 @@
+# coding=utf-8
+
+#version 0.01
+#--------------------------------------------------
+#Updates
+#0.01 - Initial Version
+#--------------------------------------------------
+#Description
+#Easier File Logger and Log Interface
+#--------------------------------------------------
+
 # from colorama import init
 import os
 import time

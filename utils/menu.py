@@ -1,3 +1,14 @@
+# coding=utf-8
+
+#version 0.01
+#--------------------------------------------------
+#Updates
+#0.01 - Initial Version
+#--------------------------------------------------
+#Description
+#Simple Menu Interface
+#--------------------------------------------------
+
 from utils.logger import Logger
 log = Logger("Menu",4)
 

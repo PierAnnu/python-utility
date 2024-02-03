@@ -10,8 +10,9 @@
 #0.211 - minor update, fix import csv on header
 #0.21 - Add delete function : Delete a file
 #--------------------------------------------------
-#Developed by: Pierluigi Annunziata
-#This file must not be used without permission.
+#Description
+#Easier File Manager
+#--------------------------------------------------
 
 import json
 import os
