@@ -9,4 +9,23 @@ class Menu:
         self.functions = functions
         
     def run(self):
-        log.hd("Menu Run")
+        while(1):
+            log.hd("Menu Run")
+            log.i(self.description)
+            self._show()
+            i = int(input(">"))
+            log.hd(f"Menu Choise: {i}")
+            if (i>len(self.functions) or i<0):
+                log.d("Exiting menu")
+                return
+            else:
+                try:
+                    self.functions[i][1]()
+                except Exception as E:
+                    log.e(f"Errori durante l'esecuzione di {self.functions[i][0]}\n{E}")
+
+    def _show(self):
+        ctx = 0
+        for fx in self.functions:
+            log.i(f"{ctx}: {fx[0]} - {fx[1].__doc__}")
+            ctx += 1
