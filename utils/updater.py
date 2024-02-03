@@ -1,5 +1,14 @@
+# coding=utf-8
+
+#version 0.01
+#--------------------------------------------------
+#Updates
+#0.01 - Initial Version
+#--------------------------------------------------
+#Description
 # VERIFICA SU GITHUB VARI APPLICATIVI PER CONTROLLARE NUOVE VERSIONI
 # IN CASO TROVA NUOVE VERSIONI DEGLI APPLICATIVI LI SCARICA E LI AGGIORNA
+#--------------------------------------------------
 
 from utils.logger import Logger
 from utils import file

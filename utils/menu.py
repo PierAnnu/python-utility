@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.01
+#version 0.02
 #--------------------------------------------------
 #Updates
+#0.02 - Implemented debug
 #0.01 - Initial Version
 #--------------------------------------------------
 #Description
