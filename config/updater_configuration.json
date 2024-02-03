@@ -1,0 +1,6 @@
+[
+    ["./utils/file.py","https://github.com/PierAnnu/python-utility/releases/download/utility/file.py"],
+    ["./utils/logger.py","https://github.com/PierAnnu/python-utility/releases/download/utility/logger.py"],
+    ["./utils/updater.py","https://github.com/PierAnnu/python-utility/releases/download/utility/menu.py"],
+    ["./utils/menu.py","https://github.com/PierAnnu/python-utility/releases/download/utility/updater.py"]
+]

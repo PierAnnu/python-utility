@@ -1,9 +1,8 @@
 # coding=utf-8
 
-#version 0.34
+#version 0.33
 #--------------------------------------------------
 #Updates
-#0.34 - Write File correctly accept binary writing 
 #0.33 - New function for reading file details 
 #0.32 - Improvement for enconding during reading json 
 #0.31 - Improvement for import library 
@@ -11,9 +10,8 @@
 #0.211 - minor update, fix import csv on header
 #0.21 - Add delete function : Delete a file
 #--------------------------------------------------
-#Description
-#Easier File Manager
-#--------------------------------------------------
+#Developed by: Pierluigi Annunziata
+#This file must not be used without permission.
 
 import json
 import os
@@ -120,13 +118,8 @@ def read(path):
         f.close()
     return r
     
-def write(path, mode, data,encoding="utf-8"):
-    if mode.find("b") != -1:
-        with open(path, mode) as f:
-            f.write(data)
-        f.close()
-        return
-    with open(path, mode, encoding=encoding) as f:
+def write(path, mode, data):
+    with open(path, mode, encoding='utf-8') as f:
         f.write(data)
     f.close()
     return

@@ -23,3 +23,117 @@
 2024-02-03 18:02:57Menu [I]: Main Menu  
 2024-02-03 18:02:57Menu [I]: 0: Test Lettura File -  Funzione di verifica della lettura di un file   
 2024-02-03 18:03:03Menu [HD]: Menu Choise: 0  
+2024-02-03 18:48:25Menu [HD]: Menu Initialization  
+2024-02-03 18:48:25Menu [HD]: Menu Initialization  
+2024-02-03 18:48:25Menu [HD]: Menu Run  
+2024-02-03 18:48:25Menu [I]: Main Menu  
+2024-02-03 18:48:25Menu [I]: 0: Menu File - None  
+2024-02-03 18:48:25Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:48:40Menu [HD]: Menu Choise: 1  
+2024-02-03 18:48:40Menu [E]: Errori durante l'esecuzione di Check Update
+Updater.download_content() takes 1 positional argument but 2 were given  
+2024-02-03 18:48:40Menu [HD]: Menu Run  
+2024-02-03 18:48:40Menu [I]: Main Menu  
+2024-02-03 18:48:40Menu [I]: 0: Menu File - None  
+2024-02-03 18:48:40Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:50:25Menu [HD]: Menu Initialization  
+2024-02-03 18:50:25Menu [HD]: Menu Initialization  
+2024-02-03 18:50:25Menu [HD]: Menu Run  
+2024-02-03 18:50:25Menu [I]: Main Menu  
+2024-02-03 18:50:25Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:50:25Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:50:48Menu [HD]: Menu Choise: 1  
+2024-02-03 18:50:51Menu [E]: Errori durante l'esecuzione di Check Update
+binary mode doesn't take an encoding argument  
+2024-02-03 18:50:51Menu [HD]: Menu Run  
+2024-02-03 18:50:51Menu [I]: Main Menu  
+2024-02-03 18:50:51Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:50:51Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:51:43Menu [HD]: Menu Initialization  
+2024-02-03 18:51:43Menu [HD]: Menu Initialization  
+2024-02-03 18:51:43Menu [HD]: Menu Run  
+2024-02-03 18:51:43Menu [I]: Main Menu  
+2024-02-03 18:51:43Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:51:43Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:51:45Menu [HD]: Menu Choise: 1  
+2024-02-03 18:51:48Menu [E]: Errori durante l'esecuzione di Check Update
+write() argument must be str, not bytes  
+2024-02-03 18:51:48Menu [HD]: Menu Run  
+2024-02-03 18:51:48Menu [I]: Main Menu  
+2024-02-03 18:51:48Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:51:48Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:52:57Menu [HD]: Menu Initialization  
+2024-02-03 18:52:57Menu [HD]: Menu Initialization  
+2024-02-03 18:52:57Menu [HD]: Menu Run  
+2024-02-03 18:52:57Menu [I]: Main Menu  
+2024-02-03 18:52:57Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:52:57Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:53:02Menu [HD]: Menu Choise: 1  
+2024-02-03 18:53:04Menu [E]: Errori durante l'esecuzione di Check Update
+binary mode doesn't take an encoding argument  
+2024-02-03 18:53:04Menu [HD]: Menu Run  
+2024-02-03 18:53:04Menu [I]: Main Menu  
+2024-02-03 18:53:04Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:53:04Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:54:06Menu [HD]: Menu Initialization  
+2024-02-03 18:54:06Menu [HD]: Menu Initialization  
+2024-02-03 18:54:06Menu [HD]: Menu Run  
+2024-02-03 18:54:06Menu [I]: Main Menu  
+2024-02-03 18:54:06Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:54:06Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 18:54:09Menu [HD]: Menu Choise: 1  
+2024-02-03 18:54:11Menu [HD]: Menu Run  
+2024-02-03 18:54:11Menu [I]: Main Menu  
+2024-02-03 18:54:11Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 18:54:11Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:00:59Menu [HD]: Menu Initialization  
+2024-02-03 19:00:59Menu [HD]: Menu Initialization  
+2024-02-03 19:00:59Menu [HD]: Menu Run  
+2024-02-03 19:00:59Menu [I]: Main Menu  
+2024-02-03 19:00:59Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:00:59Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:01:02Menu [HD]: Menu Choise: 1  
+2024-02-03 19:01:05Menu [E]: Errori durante l'esecuzione di Check Update
+a bytes-like object is required, not 'str'  
+2024-02-03 19:01:05Menu [HD]: Menu Run  
+2024-02-03 19:01:05Menu [I]: Main Menu  
+2024-02-03 19:01:05Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:01:05Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:02:11Menu [HD]: Menu Initialization  
+2024-02-03 19:02:11Menu [HD]: Menu Initialization  
+2024-02-03 19:02:11Menu [HD]: Menu Run  
+2024-02-03 19:02:11Menu [I]: Main Menu  
+2024-02-03 19:02:11Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:02:11Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:02:13Menu [HD]: Menu Choise: 1  
+2024-02-03 19:02:15Menu [E]: Errori durante l'esecuzione di Check Update
+a bytes-like object is required, not 'str'  
+2024-02-03 19:02:15Menu [HD]: Menu Run  
+2024-02-03 19:02:15Menu [I]: Main Menu  
+2024-02-03 19:02:15Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:02:15Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:04:35Menu [HD]: Menu Initialization  
+2024-02-03 19:04:35Menu [HD]: Menu Initialization  
+2024-02-03 19:04:35Menu [HD]: Menu Run  
+2024-02-03 19:04:35Menu [I]: Main Menu  
+2024-02-03 19:04:35Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:04:35Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:04:37Menu [HD]: Menu Choise: 1  
+2024-02-03 19:05:35Menu [HD]: Menu Initialization  
+2024-02-03 19:05:35Menu [HD]: Menu Initialization  
+2024-02-03 19:05:35Menu [HD]: Menu Run  
+2024-02-03 19:05:35Menu [I]: Main Menu  
+2024-02-03 19:05:35Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:05:35Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:05:36Menu [HD]: Menu Choise: 1  
+2024-02-03 19:06:28Menu [HD]: Menu Initialization  
+2024-02-03 19:06:28Menu [HD]: Menu Initialization  
+2024-02-03 19:06:28Menu [HD]: Menu Run  
+2024-02-03 19:06:28Menu [I]: Main Menu  
+2024-02-03 19:06:28Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:06:28Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
+2024-02-03 19:06:31Menu [HD]: Menu Choise: 1  
+2024-02-03 19:06:33Menu [HD]: Menu Run  
+2024-02-03 19:06:33Menu [I]: Main Menu  
+2024-02-03 19:06:33Menu [I]: 0: Menu File -  Entra in Menu   
+2024-02-03 19:06:33Menu [I]: 1: Check Update -  Verifica aggiornamenti file   
