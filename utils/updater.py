@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.01
+#version 0.02
 #--------------------------------------------------
 #Updates
+#0.02 - Major Fixing
 #0.01 - Initial Version
 #--------------------------------------------------
 #Description
@@ -30,8 +31,8 @@ class Updater:
             url = f[1]
             content = self.__download_content__(url)
             # Salva il contenuto in un file
-            content = str(content,encoding="utf-8").split('\n')
-            version = content[2]
+            content_l = str(content,encoding="utf-8").split('\n')
+            version = content_l[2]
             release_version = float(version[8:])
             actual = file.read(f[0])
             actual = actual.split('\n')
@@ -40,6 +41,7 @@ class Updater:
             log.hd(f"Identificati i seguenti dati per {f[0]}\nVersione attuale {actual_version}, versione release {release_version}")
             if actual_version<release_version:
                 log.i(f"Aggiorno file {f[0]}")
+                file.write(fr"{f[0]}","wb",content)
             elif actual_version == release_version:
                 log.i(f"File {f[0]} già aggiornato")
             else:
