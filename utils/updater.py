@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.02
+#version 0.03
 #--------------------------------------------------
 #Updates
+#0.03 - Logger moved inside class to get better control on logging
 #0.02 - Major Fixing
 #0.01 - Initial Version
 #--------------------------------------------------
@@ -13,18 +14,17 @@
 
 from utils.logger import Logger
 from utils import file
-log = Logger(r"./Updater",4)
 import requests
 
 class Updater:
     configuration_path= r"./config/updater_configuration.json"
-
+    log = Logger(r"./Updater",4)
     def __init__(self):
-        log.hd("Inizializzazione Updater")
+        self.log.hd("Inizializzazione Updater")
 
     def check_updates(self):
         ''' Verifica aggiornamenti file '''
-        log.hd("Inizio verifica aggiornamenti")
+        self.log.hd("Inizio verifica aggiornamenti")
         # File List composta da [0] Path, [1] Release
         fl = file.readJSON(self.configuration_path)
         for f in fl:
@@ -38,15 +38,15 @@ class Updater:
             actual = actual.split('\n')
             actual_version = actual[2]
             actual_version = float(actual_version[8:])
-            log.hd(f"Identificati i seguenti dati per {f[0]}\nVersione attuale {actual_version}, versione release {release_version}")
+            self.log.hd(f"Identificati i seguenti dati per {f[0]}\nVersione attuale {actual_version}, versione release {release_version}")
             if actual_version<release_version:
-                log.i(f"Aggiorno file {f[0]}")
+                self.log.i(f"Aggiorno file {f[0]}")
                 file.write(fr"{f[0]}","wb",content)
             elif actual_version == release_version:
-                log.i(f"File {f[0]} già aggiornato")
+                self.log.i(f"File {f[0]} già aggiornato")
             else:
-                log.w("La tua versione è più aggiornata della release! Aggiorna la release!")
-        log.i("Aggiornamento completato")
+                self.log.w("La tua versione è più aggiornata della release! Aggiorna la release!")
+        self.log.i("Aggiornamento completato")
                     
     def __download_content__(self,url):
         """
