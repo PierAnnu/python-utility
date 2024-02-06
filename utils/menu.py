@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.03
+#version 0.04
 #--------------------------------------------------
 #Updates
+#0.04 - Minor fixing exiting menu, log position updated as default
 #0.03 - Logger moved inside class to get better control on logging, added clear support for windows
 #0.02 - Implemented debug
 #0.01 - Initial Version
@@ -16,7 +17,7 @@ import os
 
 class Menu:
     ''' Menu '''
-    log = Logger("Menu",4)
+    log = Logger(r"./logs/Menu",4)
     debug = False
     clear_on_load = False
     def __init__(self, description, functions):
@@ -34,7 +35,7 @@ class Menu:
             self.__show__()
             i = int(input(">"))
             self.log.hd(f"Menu Choise: {i}")
-            if (i>len(self.functions) or i<0):
+            if (i>len(self.functions)-1 or i<0):
                 self.log.d("Exiting menu")
                 return
             else:

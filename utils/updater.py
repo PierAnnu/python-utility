@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.03
+#version 0.04
 #--------------------------------------------------
 #Updates
+#0.04 - log position updated, added reboot function after update
 #0.03 - Logger moved inside class to get better control on logging
 #0.02 - Major Fixing
 #0.01 - Initial Version
@@ -15,10 +16,12 @@
 from utils.logger import Logger
 from utils import file
 import requests
+import os
+import sys
 
 class Updater:
     configuration_path= r"./config/updater_configuration.json"
-    log = Logger(r"./Updater",4)
+    log = Logger(r"./logs/Updater",4)
     def __init__(self):
         self.log.hd("Inizializzazione Updater")
 
@@ -42,12 +45,18 @@ class Updater:
             if actual_version<release_version:
                 self.log.i(f"Aggiorno file {f[0]}")
                 file.write(fr"{f[0]}","wb",content)
+                self.__reboot__()
             elif actual_version == release_version:
                 self.log.i(f"File {f[0]} già aggiornato")
             else:
                 self.log.w("La tua versione è più aggiornata della release! Aggiorna la release!")
         self.log.i("Aggiornamento completato")
-                    
+
+
+    def __reboot__(self):
+        """Funzione per riavviare il programma in esecuzione."""
+        os.execv(sys.executable, ['python'] + sys.argv)
+
     def __download_content__(self,url):
         """
         Funzione per scaricare contenuto dal web
