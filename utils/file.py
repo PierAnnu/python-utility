@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.34
+#version 0.341
 #--------------------------------------------------
 #Updates
+#0.341 - Added clearDir docs 
 #0.34 - Write File correctly accept binary writing 
 #0.33 - New function for reading file details 
 #0.32 - Improvement for enconding during reading json 
@@ -56,8 +57,17 @@ def delete(path):
         return False
         
 def clearDir(path):
-    for e in os.listdir(path):
-        os.remove(fr"{path}\{e}")
+  """
+  Funzione che cancella tutti i file in una cartella.
+
+  Args:
+      path (str): Percorso della cartella da cui cancellare i file.
+
+  Raises:
+      OSError: Se la cartella non esiste o non è possibile eliminarla.
+  """
+  for e in os.listdir(path):
+    os.remove(fr"{path}/{e}")
 
 def createDir(path):
     try:
@@ -67,6 +77,7 @@ def createDir(path):
         pass
 
 def readJSON(path, encoding='utf-8'):
+    ''' Legge un Json, ritorna {} se questo non esiste '''
     r = {}
     if os.path.exists(path):
         with open(path, "r", encoding=encoding) as f:

@@ -1,8 +1,9 @@
 # coding=utf-8
 
-#version 0.02
+#version 0.03
 #--------------------------------------------------
 #Updates
+#0.03 - Add sevable feature
 #0.02 - Name changend, now beautyname is name and name is path as really is
 #0.01 - Initial Version
 #--------------------------------------------------
@@ -36,6 +37,7 @@ class Logger:
         self.level = lev
         self.path = path
         self.name = path.split('\\')[-1]
+        self.savable = True
 
     def update_time(self, newest_time):
         self.printable_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(newest_time))
@@ -56,7 +58,7 @@ class Logger:
                 msg += str(tocs)+"\n"
         print(self.info_style + f"{self.name}\n" +self.message_style+ msg, end=end)
         
-    def i(self,*message, end="\n"):
+    def i(self,*message, end="\n", savable=True):
         self.update_time(time.time())
         if self.level >= 0:
             msg = ""
@@ -69,57 +71,66 @@ class Logger:
                         msg+= k+":"+str(tocs.get(k))+" - "
                 else:
                     msg += str(tocs)+" "
-            self.save(self.printable_time+f"{self.name} [I]: " +msg)
+            if savable:
+                self.save(self.printable_time+f"{self.name} [I]: " +msg)
             if self.printable:
                 print(self.info_style + f"{self.name} [I]: " +self.message_style+ msg, end=end)
 
-    def e(self,*message, end="\n"):
+    
+    def e(self,*message, end="\n",savable=True):
         self.update_time(time.time())
         if self.level >= 1:
             msg = ""
             for tocs in message:
                 msg += str(tocs)+" "
-            self.save(self.printable_time+f"{self.name} [E]: " +msg)
+            if savable:
+                self.save(self.printable_time+f"{self.name} [E]: " +msg)
             if self.printable:
                 print(self.error_style + f"{self.name} [E]: " +self.message_style+ msg, end=end)	
-    def w(self,*message, end="\n"):
+    
+    
+    def w(self,*message, end="\n",savable=True):
         self.update_time(time.time())
         if self.level >= 2:
             msg = ""
             for tocs in message:
                 msg += str(tocs)+" "
-            self.save(self.printable_time+f"{self.name} [W]: "+msg)
+            if savable:
+                self.save(self.printable_time+f"{self.name} [W]: "+msg)
             if self.printable:
                 print(self.warning_style + f"{self.name} [W]: " +self.message_style+ msg, end=end)
 
     
-    def d(self,*message, end="\n"):
+    def d(self,*message, end="\n",savable=True):
         self.update_time(time.time())
         if self.level >= 3:
             msg = ""
             for tocs in message:
                 msg += str(tocs)+" "
-            self.save(self.printable_time+f"{self.name} [D]: "+msg)
+            if savable:
+                self.save(self.printable_time+f"{self.name} [D]: "+msg)
             if self.printable:
                 print(self.debug_style + f"{self.name} [D]: " +self.message_style+ msg, end=end)	
 
-    def hd(self,*message, end="\n"):
+    def hd(self,*message, end="\n",savable=True):
         self.update_time(time.time())
         if self.level >= 4:
             msg = ""
             for tocs in message:
                 msg += str(tocs)+" "
-            self.save(self.printable_time+f"{self.name} [HD]: " +msg)
+            if savable:
+                self.save(self.printable_time+f"{self.name} [HD]: " +msg)
             if self.printable:
                 print(self.harddebug_style + f"{self.name} [HD]: " +self.message_style+ msg, end=end)	
 
     def save(self,*message):
-        msg = ""
-        for tocs in message:
-            msg += str(tocs)+" "
-        try:
-            with open(self.path+".log","ab") as log_file:
-                log_file.write(msg.encode('utf-8')+b"\n")
-            log_file.close()
-        except:
-            self.e("ERROR SAVING LOG")
+        if self.savable:
+            msg = ""
+            for tocs in message:
+                msg += str(tocs)+" "
+            try:
+                with open(self.path+".log","ab") as log_file:
+                    log_file.write(msg.encode('utf-8')+b"\n")
+                log_file.close()
+            except:
+                self.e("ERROR SAVING LOG")

@@ -2,5 +2,8 @@
     ["./utils/file.py","https://github.com/PierAnnu/python-utility/releases/download/utility/file.py"],
     ["./utils/logger.py","https://github.com/PierAnnu/python-utility/releases/download/utility/logger.py"],
     ["./utils/menu.py","https://github.com/PierAnnu/python-utility/releases/download/utility/menu.py"],
-    ["./utils/updater.py","https://github.com/PierAnnu/python-utility/releases/download/utility/updater.py"]
+    ["./utils/updater.py","https://github.com/PierAnnu/python-utility/releases/download/utility/updater.py"],
+    ["./utils/timer.py","https://github.com/PierAnnu/python-utility/releases/download/utility/timer.py"],
+    ["./utils/image_search.py","https://github.com/PierAnnu/python-utility/releases/download/utility/image_search.py"],
+    ["./utils/networker.py","https://github.com/PierAnnu/python-utility/releases/download/utility/networker.py"]
 ]
